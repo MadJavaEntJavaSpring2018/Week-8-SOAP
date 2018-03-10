@@ -11,19 +11,21 @@ public interface NdfdXML extends javax.xml.rpc.Service {
 
 /**
  * The service has 12 exposed functions, NDFDgen, NDFDgenLatLonList,
- * NDFDgenByDay, NDFDgenByDayLatLonList,
- *             LatLonListSubgrid, LatLonListLine, LatLonListZipCode,
+ * NDFDgenByDay, NDFDgenByDayLatLonList, LatLonListSubgrid, LatLonListLine, LatLonListZipCode,
  * CornerPoints, LatLonListSquare, GmlLatLonList, GmlTimeSeries, and
  * LatLonListCityNames.
+ *
+ *
  *             For the NDFDgen function, the client needs to provide
  * a latitude and longitude pair and the product type. The Unit will
- * default
- *             to U.S. Standard (english) unless Metric is chosen by
+ * default to U.S. Standard (english) unless Metric is chosen by
  * client. The client also needs to provide the start and end time (Local)
  * of the period that it wants data for (if shorter than the 7 days is
  * wanted).  For the time-series product, the client needs to
  *             provide an array of boolean values corresponding to which
  * NDFD values are desired.
+ *
+ *
  *             For the NDFDgenByDay function, the client needs to provide
  * a latitude and longitude pair, the date (Local) it wants to start
  *             retrieving data for and the number of days worth of data.
@@ -51,10 +53,12 @@ public interface NdfdXML extends javax.xml.rpc.Service {
  * each end point a line. The two points are delimited with a space.
  *             The service then returns data for all the NDFD points
  * on the line formed by the two points.
+ *
  *             For the LatLonListZipCode function, the input is the same
  * as the NDFDgen function except the latitude and longitude values
  *             are relaced by a zip code for the 50 United States and
  * Puerto Rico.
+ *
  *             For the LatLonListSquare function, the input is the same
  * as the NDFDgen function except the latitude and longitude values
  *             are relaced by a zip code for the 50 United States and

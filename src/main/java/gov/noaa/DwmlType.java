@@ -1,12 +1,6 @@
-
 package gov.noaa;
 
-import javax.xml.bind.annotation.XmlAccessType;
-import javax.xml.bind.annotation.XmlAccessorType;
-import javax.xml.bind.annotation.XmlAttribute;
-import javax.xml.bind.annotation.XmlElement;
-import javax.xml.bind.annotation.XmlType;
-
+import javax.xml.bind.annotation.*;
 
 /**
  * <p>Java class for dwmlType complex type.
@@ -28,6 +22,8 @@ import javax.xml.bind.annotation.XmlType;
  * 
  * 
  */
+
+@XmlRootElement(name="dwml")
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "dwmlType", propOrder = {
     "latLonList"
@@ -45,7 +41,6 @@ public class DwmlType {
      * @return
      *     possible object is
      *     {@link String }
-     *     
      */
     public String getLatLonList() {
         return latLonList;
@@ -57,7 +52,6 @@ public class DwmlType {
      * @param value
      *     allowed object is
      *     {@link String }
-     *     
      */
     public void setLatLonList(String value) {
         this.latLonList = value;
@@ -69,7 +63,6 @@ public class DwmlType {
      * @return
      *     possible object is
      *     {@link String }
-     *     
      */
     public String getVersion() {
         return version;
@@ -81,7 +74,6 @@ public class DwmlType {
      * @param value
      *     allowed object is
      *     {@link String }
-     *     
      */
     public void setVersion(String value) {
         this.version = value;
